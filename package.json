@@ -1,0 +1,31 @@
+{
+  "name": "generator-lingyu-node-modules",
+  "version": "0.0.1",
+  "description": "A node modules generator of Yeoman",
+  "homepage": "https://github.com/LingyuCoder/generator-lingyu-node-modules",
+  "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "node-modules"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LingyuCoder/generator-lingyu-node-modules.git",
+    "web": "https://github.com/LingyuCoder/generator-lingyu-node-modules"
+  },
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/generator-lingyu-node-modules/issues/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/LingyuCoder/generator-lingyu-node-modules/LICENSE"
+    }
+  ]
+}
