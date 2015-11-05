@@ -3,7 +3,7 @@
 require('should');
 var Mod = require('../index');
 
-describe('<%= componentName %>', function() {
+describe('...', function() {
   it('...', function() {
     // Your test code here
   });
