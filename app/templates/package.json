@@ -1,5 +1,5 @@
 {
-  "name": "<%= componentName %>",
+  "name": "<%= name %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
   "main": "src/index.js",

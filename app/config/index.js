@@ -3,29 +3,29 @@
 module.exports = function(appname, type) {
   var common = [{
     type: 'input',
-    name: 'componentName',
-    message: '组件名称',
+    name: 'name',
+    message: 'Name',
     default: appname.split(' ').join('-')
   }, {
     type: 'input',
     name: 'version',
-    message: '版本号',
-    default: '0.0.1'
+    message: 'Version',
+    default: '1.0.0'
   }, {
     type: 'input',
     name: 'author',
-    message: '作者',
-    default: 'name@gamil.com'
+    message: 'Author',
+    default: 'Your name'
   }, {
     type: 'input',
     name: 'description',
-    message: '详细描述',
-    default: '组件说明'
+    message: 'Description',
+    default: '...'
   }, {
     type: 'input',
     name: 'repositoryUrl',
-    message: '仓库地址',
-    default: ''
+    message: 'Repository URL',
+    default: '...'
   }];
   return {
     prompt: common,
@@ -35,14 +35,15 @@ module.exports = function(appname, type) {
           ctx.directory(val, val);
         });
         ctx.template('gitignore', '.gitignore');
-        ctx.template('package.json', 'package.json', data);
         [
           '.eslintrc',
           '.travis.yml',
           'index.js',
-          'LICENSE'
+          'LICENSE',
+          'package.json',
+          'README.md'
         ].forEach(function(name) {
-          ctx.template(name, name);
+          ctx.template(name, name, data);
         });
         done();
       };
