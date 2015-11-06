@@ -9,7 +9,7 @@ module.exports = generators.Base.extend({
   prompting: function() {
     var files = fs.readdirSync(process.cwd());
     if (files.length) {
-      console.log('此文件夹不为空，无法初始化。');
+      console.log('Error: Current directory is not empty');
       return;
     }
     var done = this.async();
