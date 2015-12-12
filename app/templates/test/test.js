@@ -3,8 +3,9 @@
 require('should');
 var Mod = require('../index');
 
-describe('...', function() {
-  it('...', function() {
+describe('...', () => {
+  it('...', () => {
     // Your test code here
+    Mod();
   });
 });

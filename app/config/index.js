@@ -21,11 +21,6 @@ module.exports = function(appname, type) {
     name: 'description',
     message: 'Description',
     default: '...'
-  }, {
-    type: 'input',
-    name: 'repositoryUrl',
-    message: 'Repository URL',
-    default: '...'
   }];
   return {
     prompt: common,

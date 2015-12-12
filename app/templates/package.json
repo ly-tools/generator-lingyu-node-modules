@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "<%= repositoryUrl %>"
+    "url": "https://github.com/<%= author %>/<%= name %>"
   },
   "keywords": [],
   "bugs": {
-    "url": "<%= repositoryUrl %>/issues"
+    "url": "https://github.com/<%= author %>/<%= name %>/issues"
   }
 }
