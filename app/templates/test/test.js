@@ -1,7 +1,7 @@
 'use strict';
 
 require('should');
-var Mod = require('../index');
+const Mod = require('../index');
 
 describe('...', () => {
   it('...', () => {
