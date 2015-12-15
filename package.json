@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/LingyuCoder/generator-lingyu-node-modules/issues/"
   },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
   "license": "MIT"
 }

@@ -1,11 +1,22 @@
 'use strict';
 
-module.exports = function(appname, type) {
-  var common = [{
+const DIRECTORIES = ['lib', 'test'];
+const FILES = [
+  '.eslintrc',
+  '.travis.yml',
+  'index.js',
+  'LICENSE',
+  'package.json',
+  'README.md'
+];
+
+module.exports = (appname) => {
+  const name = appname.split(' ').join('-');
+  const common = [{
     type: 'input',
     name: 'name',
     message: 'Name',
-    default: appname.split(' ').join('-')
+    default: name
   }, {
     type: 'input',
     name: 'version',
@@ -24,22 +35,11 @@ module.exports = function(appname, type) {
   }];
   return {
     prompt: common,
-    fn: function(ctx, done) {
-      return function(data) {
-        ['lib', 'test'].forEach(function(val) {
-          ctx.directory(val, val);
-        });
+    fn: (ctx, done) => {
+      return data => {
+        DIRECTORIES.forEach(val => ctx.directory(val, val));
         ctx.template('gitignore', '.gitignore');
-        [
-          '.eslintrc',
-          '.travis.yml',
-          'index.js',
-          'LICENSE',
-          'package.json',
-          'README.md'
-        ].forEach(function(name) {
-          ctx.template(name, name, data);
-        });
+        FILES.forEach(name => ctx.template(name, name, data));
         done();
       };
     }
