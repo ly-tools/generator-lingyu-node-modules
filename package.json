@@ -1,6 +1,6 @@
 {
   "name": "generator-lingyu-node-modules",
-  "version": "1.1.5",
+  "version": "2.0.0",
   "description": "A node modules generator of Yeoman",
   "homepage": "https://github.com/LingyuCoder/generator-lingyu-node-modules",
   "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
