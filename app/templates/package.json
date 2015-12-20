@@ -22,5 +22,8 @@
   "keywords": [],
   "bugs": {
     "url": "https://github.com/<%= author %>/<%= name %>/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
   }
 }
