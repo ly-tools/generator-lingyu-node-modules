@@ -9,6 +9,11 @@
 
 A node modules generator of Yeoman
 
+* ES7 features with babel (async/await, import/export and so on)
+* mocha + shouldjs
+* istanbul
+* travis
+
 ## Installation
 
 ```bash
@@ -22,6 +27,9 @@ $ npm install -g generator-lingyu-node-modules
 $ mkdir demo && cd demo
 $ yo lingyu-node-modules
 $ npm install
+$ npm run dev # watch file change and run build automaticly
+$ npm run build # build files with babel
+$ npm run test # test with mocha and istanbul
 ```
 
 ## License
