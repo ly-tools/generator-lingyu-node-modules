@@ -1,7 +1,7 @@
 # generator-lingyu-node-modules
 
-[![Build Status](https://travis-ci.org/LingyuCoder/generator-lingyu-node-modules.png)](https://travis-ci.org/LingyuCoder/generator-lingyu-node-modules)
-[![Dependency Status](https://david-dm.org/LingyuCoder/generator-lingyu-node-modules.svg)](https://david-dm.org/LingyuCoder/generator-lingyu-node-modules)
+[![Build Status](https://travis-ci.org/ly-tools/generator-lingyu-node-modules.png)](https://travis-ci.org/ly-tools/generator-lingyu-node-modules)
+[![Dependency Status](https://david-dm.org/ly-tools/generator-lingyu-node-modules.svg)](https://david-dm.org/ly-tools/generator-lingyu-node-modules)
 [![NPM version](http://img.shields.io/npm/v/generator-lingyu-node-modules.svg?style=flat-square)](http://npmjs.org/package/generator-lingyu-node-modules)
 [![node](https://img.shields.io/badge/node.js-%3E=_4.0-green.svg?style=flat-square)](http://nodejs.org/download/)
 [![License](http://img.shields.io/npm/l/generator-lingyu-node-modules.svg?style=flat-square)](LICENSE)
